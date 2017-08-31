@@ -1,0 +1,277 @@
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Gloria Hallelujah, arial, sans-serif, sans;
+}
+
+h2 {
+	font-family: Architects Daughter, arial, sans-serif, sans;
+}
+
+a { 
+	text-decoration: none;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* unable to get overlay to work on class wrap...takes too long to increase padding for various sizes */
+.wrap{
+}
+
+
+/* ---- GIF ---- */
+.gif {
+	width:100%;
+	height:0;
+	padding-bottom:55%;
+	position:relative;
+}
+
+.iframe {
+	width:100%; 
+	height: 100%;
+	position:absolute;
+}
+
+/* ---- Title ---- */
+
+.cover {
+	position: absolute;
+	top: 0;
+	font-size: 1%;
+}
+
+.main-header{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	line-height: .85;
+	background: rgba(0,0,0,0.5);
+	padding-top: 25%;
+	padding-bottom:8%;
+}
+
+.name {
+	width: 80%;
+	margin: 0 10% 0 10%;
+	display: block;
+}
+
+.subtitle {
+	font-size: 1.5em;
+	color: dodgerblue;
+	text-shadow: #39FF14 0px 0px 2px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* ---- Layout Containers ---- */
+.slideshow {
+	text-align:center;
+	height: 20em;
+}
+
+.mySlides {
+	background: grey;
+	border: 1px solid black;
+	padding: 5px;
+	max-height: 100%;
+	max-width:100%;
+}
+
+/* ---- Page Elements ---- */
+
+h2 {
+	text-align: center;
+}
+
+p {
+	padding: 0 5%;
+	text-align: center;
+	min-width: 251px;
+}
+
+
+
+#button{
+	margin: 10% 5%;
+	border: 1px solid #3F4;
+	border-radius: 5px;
+	background: #39FF14;
+	width: 90%;
+}
+
+footer {
+	background: dodgerblue;
+	color: #39FF14;
+	text-align: center;
+	padding: 15px;
+}
+
+.first {
+	padding: 5px;
+}
+.fan_challenge {
+	text-align: center;
+	border: 1px solid dodgerblue;
+}
+
+#upload {
+	padding: 0 12px;
+	margin: 0 10px;
+}
+
+/* unsure how to make upload area smaller */
+.second {
+	display:block;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+  
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 472px) {
+/* Styles */
+
+.main-header {
+	padding-bottom: 12%;
+}
+
+.first {
+	margin: 0 25% 0 25%;
+}
+
+.slideshow {
+	height: 32em;
+}
+
+}
+
+@media (min-width: 540px){
+/* Styles */  
+
+.main-header {
+	padding-bottom: 10%;
+}
+
+.first{
+	display: inline-block;
+	margin-top: 5%;
+}
+
+.slideshow {
+	margin: 0 5em;
+	height: 30em;
+}
+
+fieldset {
+	border: none;
+}
+
+/* unsure how to move image: */
+
+.second {
+	text-align: center;
+	width: 50%;
+	margin: 0 25%;
+}
+
+.subtitle{
+	font-size: 3em;
+}
+
+.fan_challenge{
+	margin-left: 13%;
+}
+}
+@media (min-width: 724px){
+ /* Styles */
+ .subtitle{
+	 font-size: 5em;
+ }
+ .main-header {
+	 padding-bottom: 10%;
+ }
+
+ 
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+  
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+   
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+  
+}
+
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
